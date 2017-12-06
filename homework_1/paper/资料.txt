@@ -1,0 +1,6 @@
+[Bradley-Terry模型]
+
+https://sites.google.com/site/rlearningsite/catagory/bradleyterry
+
+https://github.com/An0nym6/Bradley-TerryRankingTemplate
+

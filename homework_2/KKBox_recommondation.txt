@@ -41,4 +41,7 @@ https://github.com/dsmilab/WSDM2018-KKBox-MRC
 
 https://github.com/vcabeli/kkbox_music
 
+[填补缺失值]
+https://github.com/RandolphVI/Music-Recommendation-System
+
 训练和测试数据是从用户在给定时间内的收听历史中选择的。请注意，此时间段选择在WSDM-KKBox流失预测时间段之前。训练和测试设备是按时间划分的，公/私分开是基于独特的用户/歌曲对。
