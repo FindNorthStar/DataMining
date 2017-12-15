@@ -14,12 +14,12 @@ MODEL_FILE_NAME = 'model.txt'
 
 
 
-train_df = pd.read_csv('data/train.csv')
-test_df = pd.read_csv('data/test.csv')
+train_df = pd.read_csv('../../KKBox/train.csv')
+test_df = pd.read_csv('../../KKBox/test.csv')
 comb_df = train_df.append(test_df)
-songs_df = pd.read_csv('data/songs.csv')
-song_extra_info_df = pd.read_csv('data/song_extra_info.csv')
-members_df = pd.read_csv('data/members.csv')
+songs_df = pd.read_csv('../../KKBox/songs.csv')
+song_extra_info_df = pd.read_csv('../../KKBox/song_extra_info.csv')
+members_df = pd.read_csv('../../KKBox/members.csv')
 
 def custom_cv(params, train_set, hold_out_set=None, k_fold=5, num_boost_round=20):
     x_train = train_set.data
@@ -426,5 +426,5 @@ submission_df = pd.DataFrame()
 submission_df['id'] = test_ids
 submission_df['target'] = y_test
 # string file compression reduces file size
-submission_df.to_csv('data/submission.csv.gz', compression = 'gzip', index=False, float_format = '%.5f')
+submission_df.to_csv('../../KKBox/submission.csv.gz', compression = 'gzip', index=False, float_format = '%.5f')
 submission_df.info()
